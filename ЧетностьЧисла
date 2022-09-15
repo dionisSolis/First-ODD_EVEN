@@ -1,6 +1,6 @@
 using System;
 
-namespace четностьЧисла
+namespace oddEven
 {
     class Program
     {
@@ -8,12 +8,12 @@ namespace четностьЧисла
         {
             Console.WriteLine("Введите натуральное число");
             int number = int.Parse(Console.ReadLine());
-            bool truth = false;
+            bool isTruth = false;
             if (number % 10 == 6)
-                truth = true;
+                isTruth = true;
             else
-                truth = false;
-            Console.WriteLine($"Условие: четность, последняя цифра 6. Выполнено? {truth}");
+                isTruth = false;
+            Console.WriteLine($"Условие: четность, последняя цифра 6. Выполнено? {isTruth}");
             Console.Read();
         }
     }
