@@ -1,0 +1,20 @@
+using System;
+
+namespace четностьЧисла
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите натуральное число");
+            int number = int.Parse(Console.ReadLine());
+            bool truth = false;
+            if (number % 10 == 6)
+                truth = true;
+            else
+                truth = false;
+            Console.WriteLine($"Условие: четность, последняя цифра 6. Выполнено? {truth}");
+            Console.Read();
+        }
+    }
+}
