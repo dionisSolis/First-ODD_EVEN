@@ -9,6 +9,7 @@ namespace oddEven
             Console.WriteLine("Введите натуральное число");
             int digit = int.Parse(Console.ReadLine());
             bool isTruth = false;
+            
             if (digit % 10 == 6)
             {
                 isTruth = true;
@@ -17,6 +18,7 @@ namespace oddEven
             {
                 isTruth = false;
             }
+            
             Console.WriteLine($"Условие: четность, последняя цифра 6. Выполнено? {isTruth}");
             Console.Read();
         }
